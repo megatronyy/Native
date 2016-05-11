@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "show", "show\show.vcxproj", "{639B77D2-7F01-4EDB-9E16-9756ECA5CCFF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithm", "Algorithm\Algorithm.vcxproj", "{11B816D8-F204-4A83-992A-1B06542D48B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{639B77D2-7F01-4EDB-9E16-9756ECA5CCFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{639B77D2-7F01-4EDB-9E16-9756ECA5CCFF}.Debug|Win32.Build.0 = Debug|Win32
+		{639B77D2-7F01-4EDB-9E16-9756ECA5CCFF}.Release|Win32.ActiveCfg = Release|Win32
+		{639B77D2-7F01-4EDB-9E16-9756ECA5CCFF}.Release|Win32.Build.0 = Release|Win32
+		{11B816D8-F204-4A83-992A-1B06542D48B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11B816D8-F204-4A83-992A-1B06542D48B2}.Debug|Win32.Build.0 = Debug|Win32
+		{11B816D8-F204-4A83-992A-1B06542D48B2}.Release|Win32.ActiveCfg = Release|Win32
+		{11B816D8-F204-4A83-992A-1B06542D48B2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
