@@ -1,7 +1,7 @@
 //#include "array.h"
 //#include "list.h"
-//#include "stack.h"
-#include "queue.h"
+#include "stack.h"
+//#include "queue.h"
 //#include "recursion.h"
 //#include "digui.h"
 
@@ -16,10 +16,10 @@ int main(void)
 	//testList();
 
 	//线性表测试--链式栈
-	//testStack();
+	testStack();
 
 	//线性表测试--循环队列
-	testQueue();
+	//testQueue();
 
 	//递归
 	//testRecursion();
