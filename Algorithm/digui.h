@@ -35,18 +35,5 @@ n不能大于64
 #include <malloc.h>
 
 extern void hannuota(int n, char A, char B, char C);
-
-void testHannuota()
-{
-	char ch1 = 'A';
-	char ch2 = 'B';
-	char ch3 = 'C';
-	int n;
-
-	printf("请输入要移动盘子的个数:");
-	scanf_s("%d", &n);
-	printf("\n");
-	  
-	hannuota(n, ch1, ch2, ch3);
-}
+extern void testHannuota();
 

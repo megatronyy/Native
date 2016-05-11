@@ -1,5 +1,23 @@
 #include "list.h"
 
+void testList()
+{
+	PNODE pHead = create_list();
+	traverse_list(pHead);
+
+	/*int len = length_list(pHead);
+	printf("链表的长度为：%d\n", len);*/
+
+	//insert_list(pHead, 3, 9);
+
+	/*int val;
+	delete_list(pHead, 3, &val);*/
+
+	sort_list(pHead);
+
+	traverse_list(pHead);
+}
+
 //创建链表
 PNODE create_list(void)
 {

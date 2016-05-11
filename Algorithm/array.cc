@@ -1,5 +1,33 @@
 #include "array.h"
 
+//测试方法
+void testArr()
+{
+	ARR arr;
+
+	init_arr(&arr, 6);
+	append_arr(&arr, 3);
+	append_arr(&arr, 2);
+	append_arr(&arr, 1);
+	append_arr(&arr, 5);
+	append_arr(&arr, 4);
+	insert_arr(&arr, 6, 99);
+	show_arr(&arr);
+
+	sort_arr(&arr);
+
+	show_arr(&arr);
+
+	/*int delVal;
+	delete_arr(&arr, 4, &delVal);*/
+
+
+
+	inversion_arr(&arr);
+
+	show_arr(&arr);
+}
+
 void init_arr(PARR pArr, int length)
 {
 	//动态内存分配，如果分配失败，就把NULL分配给pArr->pBase

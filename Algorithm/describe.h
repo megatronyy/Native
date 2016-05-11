@@ -21,7 +21,7 @@
 1.创建动态项 选择win32控制台应用程序->输入项目名称->选择动态链接库->取消默认预编译头->完毕。 
 2.编写库  创建cpp和h文件，并编写内容。在h文件中对函数的声明时注意，
   对于该dll输出接口的函数要用__declspec(dllexport)声明，
-  如 extern “C”__declspec(dllexport) int Add(int &a,int &b);   
+  如 extern “C”int Add(int &a,int &b);   
   加extern“C”是为了解决因C编译器与C++编译器对函数声明的编译情况不同（c语言不支持重载），而导致的调用错误。
   如果已知在c++环境下调用，可不必加。 
 3.引用dll同时需要lib文件，再在项目中添加一个def文件。 

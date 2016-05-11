@@ -1,5 +1,25 @@
 #include "stack.h"
 
+void testStack()
+{
+	STACK S;
+	init(&S);
+	push(&S, 1);
+	push(&S, 2);
+	push(&S, 3);
+	push(&S, 4);
+	push(&S, 5);
+	traverse(&S);
+	int val;
+	if (pop(&S, &val))
+	{
+		printf("³öÕ»ÔªËØ:%d\n", val);
+		traverse(&S);
+	}
+	clear(&S);
+	traverse(&S);
+}
+
 void init(PSTACK ps)
 {
 	ps->pTop = (PNODE)malloc(sizeof(NODE));

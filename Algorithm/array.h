@@ -19,49 +19,16 @@ typedef struct Arr
 	//struct ArrType *arrType;
 } *PARR, ARR;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+ extern void init_arr(PARR, int);
+extern bool append_arr(PARR, int);
+extern bool insert_arr(PARR, int, int);
+extern bool delete_arr(PARR, int, int*);
+extern int get(PARR, int);
+extern bool is_empty(PARR);
+extern bool is_full(PARR);
+extern void sort_arr(PARR);
+extern void show_arr(PARR);
+extern void inversion_arr(PARR);
+extern void testArr();
 
-__declspec(dllexport) extern void init_arr(PARR, int);
-__declspec(dllexport) extern bool append_arr(PARR, int);
-__declspec(dllexport) extern bool insert_arr(PARR, int, int);
-__declspec(dllexport) extern bool delete_arr(PARR, int, int*);
-__declspec(dllexport) extern int get(PARR, int);
-__declspec(dllexport) extern bool is_empty(PARR);
-__declspec(dllexport) extern bool is_full(PARR);
-__declspec(dllexport) extern void sort_arr(PARR);
-__declspec(dllexport) extern void show_arr(PARR);
-__declspec(dllexport) extern void inversion_arr(PARR);
-
-#ifdef __cplusplus
-	}
-#endif
-//≤‚ ‘∑Ω∑®
-void testArr()
-{
-	ARR arr;
-
-	init_arr(&arr, 6);
-	append_arr(&arr, 3);
-	append_arr(&arr, 2);
-	append_arr(&arr, 1);
-	append_arr(&arr, 5);
-	append_arr(&arr, 4);
-	insert_arr(&arr, 6, 99);
-	show_arr(&arr);
-
-	sort_arr(&arr);
-
-	show_arr(&arr);
-
-	/*int delVal;
-	delete_arr(&arr, 4, &delVal);*/
-
-
-
-	inversion_arr(&arr);
-
-	show_arr(&arr);
-}
 
