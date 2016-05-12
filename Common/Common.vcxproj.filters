@@ -15,16 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClInclude Include="test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cc">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="testlib.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="testdll.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <None Include="Source.def">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

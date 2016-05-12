@@ -1,11 +1,13 @@
 //#include "array.h"
 //#include "list.h"
-#include "stack.h"
+//#include "stack.h"
 //#include "queue.h"
 //#include "recursion.h"
 //#include "digui.h"
-
 //#include "tree.h"
+
+//#include "testlib.h"
+#include "testdll.h"
 
 int main(void)
 {
@@ -16,7 +18,7 @@ int main(void)
 	//testList();
 
 	//线性表测试--链式栈
-	testStack();
+	//testStack();
 
 	//线性表测试--循环队列
 	//testQueue();
@@ -26,6 +28,11 @@ int main(void)
 
 	//汉诺塔
 	//testHannuota();
+
+	//隐式调用动态库
+	//printf("获取到的值为：%d\n", get());
+
+	testDll();
 
 	system("pause");
 	return 0;
