@@ -6,8 +6,8 @@
 //#include "digui.h"
 //#include "tree.h"
 
-//#include "testlib.h"
-#include "testdll.h"
+#include "testlib.h"
+//#include "testdll.h"
 
 int main(void)
 {
@@ -30,9 +30,9 @@ int main(void)
 	//testHannuota();
 
 	//隐式调用动态库
-	//printf("获取到的值为：%d\n", get());
+	printf("获取到的值为：%d\n", get());
 
-	testDll();
+	//testDll();
 
 	system("pause");
 	return 0;
