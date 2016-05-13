@@ -82,6 +82,7 @@
     <ClInclude Include="list.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="recursion.h" />
+    <ClInclude Include="sort.h" />
     <ClInclude Include="stack.h" />
     <ClInclude Include="tree.h" />
   </ItemGroup>
@@ -91,6 +92,7 @@
     <ClCompile Include="list.cc" />
     <ClCompile Include="queue.cc" />
     <ClCompile Include="recursion.cc" />
+    <ClCompile Include="sort.cc" />
     <ClCompile Include="stack.cc" />
     <ClCompile Include="tree.cc" />
   </ItemGroup>

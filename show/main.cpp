@@ -30,7 +30,8 @@ int main(void)
 	//testHannuota();
 
 	//隐式调用动态库
-	printf("获取到的值为：%d\n", get());
+	//printf("获取到的值为：%d\n", get());
+	testsort();
 
 	//testDll();
 
