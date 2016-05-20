@@ -81,6 +81,7 @@
     <ClInclude Include="digui.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="queue.h" />
+    <ClInclude Include="QuickSort.h" />
     <ClInclude Include="recursion.h" />
     <ClInclude Include="sort.h" />
     <ClInclude Include="stack.h" />
@@ -91,6 +92,7 @@
     <ClCompile Include="digui.cc" />
     <ClCompile Include="list.cc" />
     <ClCompile Include="queue.cc" />
+    <ClCompile Include="QuickSort.cc" />
     <ClCompile Include="recursion.cc" />
     <ClCompile Include="sort.cc" />
     <ClCompile Include="stack.cc" />

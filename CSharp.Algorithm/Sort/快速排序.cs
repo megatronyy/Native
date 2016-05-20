@@ -25,7 +25,6 @@ namespace CSharp.Algorithm.Sort
             if (low < high)
             {
                 int pos = 0;
-                int val = arr.arrData[low];
                 pos = FindPos(arr, low, high);
                 QuickSort(arr, low, pos - 1);
                 QuickSort(arr, pos + 1, high);

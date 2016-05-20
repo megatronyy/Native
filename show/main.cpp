@@ -31,7 +31,10 @@ int main(void)
 
 	//隐式调用动态库
 	//printf("获取到的值为：%d\n", get());
-	testsort();
+	//testsort();
+
+	//快速排序
+	testQuickSort();
 
 	//testDll();
 
