@@ -22,10 +22,10 @@ namespace CSharp.Algorithm.Sort
 
         static void QuickSort(SortNum arr, int low, int high)
         {
-            int val = arr.arrData[low];
-            int pos = 0;
             if (low < high)
             {
+                int pos = 0;
+                int val = arr.arrData[low];
                 pos = FindPos(arr, low, high);
                 QuickSort(arr, low, pos - 1);
                 QuickSort(arr, pos + 1, high);
@@ -37,10 +37,10 @@ namespace CSharp.Algorithm.Sort
             int val = arr.arrData[low];
             while (low < high)
             {
-                while (low < high && arr.arrData[high] >= val)
+                while (low < high && arr.arrData[high] > val)
                     --high;
                 arr.arrData[low] = arr.arrData[high];
-                while (low < high && arr.arrData[low] <= val)
+                while (low < high && arr.arrData[low] < val)
                     ++low;
                 arr.arrData[high] = arr.arrData[low];
             }
