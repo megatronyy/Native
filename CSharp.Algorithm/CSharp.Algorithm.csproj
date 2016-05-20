@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sort\冒泡排序.cs" />
+    <Compile Include="Sort\快速排序.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
