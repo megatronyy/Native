@@ -5,7 +5,8 @@ void testsort()
 	int arr[6] = {5,3,6,4,2,1};
 	int i;
 	//sort(arr, 6);
-	insertsort(arr, 6);
+	//insertsort(arr, 6);
+	selectsort(arr, 6);
 	for(i = 0; i<6; ++i)
 	{
 		printf("%d ", arr[i]);
@@ -44,6 +45,29 @@ void insertsort(int *a, int len)
 			--i;
 		}
 		a[i+1] = key;
+	}
+}
+
+void selectsort(int *a, int len)
+{
+	int i, j, min, temp;
+	for(i = 0; i < len; ++i)
+	{
+		min = i;
+		for(j = i + 1; j<len; ++j)
+		{
+			if(a[min] > a[j])
+			{
+				min = j;
+			}
+		}
+
+		if(min != i)
+		{
+			temp = a[i];
+			a[i] = a[min];
+			a[min] = temp;
+		}
 	}
 }
 
