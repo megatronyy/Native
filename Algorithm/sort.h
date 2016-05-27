@@ -5,9 +5,6 @@
 
 //ц╟ещеепР
 void sort(int *, int);
-//©ЛкыеепР
-void quicksort(int *, int, int);
-void findPos(int *, int);
 //╡ЕхКеепР
 void insertsort(int *, int);
 //я║тЯеепР
