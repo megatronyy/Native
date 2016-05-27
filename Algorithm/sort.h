@@ -8,6 +8,7 @@ void sort(int *, int);
 //快速排序
 void quicksort(int *, int, int);
 void findPos(int *, int);
-
+//插入排序
+void insertsort(int *, int);
 //测试方法
 void testsort();

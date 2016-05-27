@@ -34,7 +34,10 @@ int main(void)
 	//testsort();
 
 	//¿ìËÙÅÅĞò
-	testQuickSort();
+	//testQuickSort();
+
+	//²åÈëÅÅĞò
+	testsort();
 
 	//testDll();
 
