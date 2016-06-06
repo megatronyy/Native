@@ -3,59 +3,64 @@
 void testMerge()
 {
 	int i;
-	int arr[7] = {3,4,2,6,1,5,7};
-	merge_sort(arr, 0, 6);
-	for(i = 0; i<6; ++i)
+	int arr[10] = {3,4,2,6,1,5,7, 9, 10, 8};
+	merge_sort(arr, 0, 9);
+	for(i = 0; i<10; ++i)
 	{
 		printf("%d ", arr[i]);
 	}
 	printf("\n");
 }
 
-void merge(int *a, int p, int q, int r)
+void merge(int *a, int start, int middle, int end)
 {
-	int i, j, k;
-	int n1 = q - p + 1;
-	int n2 = r - q;
+	int i, j=0, k;
+	int n1 = middle - start + 1;
+	int n2 = end - middle;
 
-	int *l = (int*)malloc(sizeof(int) * n1);
-	int *h = (int*)malloc(sizeof(int) * n2);
+	int *L = new int[n1 + 1];
+	int *R = new int[n2 + 1];
 
 	for(i = 0; i < n1; i++)
 	{
-		 *(l+i) = a[p+i];
+		*(L+i) = *(a + start + i);
 	}
+	*(L + n1) = 1000000;
 
-	for(j = 0; j < n2; j++)
+	for(i = 0; i < n1; i++)
 	{
-		 *(h+j) = a[q + j + 1];
+		*(R+i) = *(a + middle + i + 1);
 	}
+	*(R + n2) = 1000000;
 
-	i = 0, j = 0;
+	i = 0;
 
-	for(k = p; k < r; k++)
+	for(k = start; k <= end; k++)
 	{
-		if(l[i] <= h[j])
+		if(L[i] <= R[j])
 		{
-			a[k] = l[i];
+			a[k] = L[i];
 			i++;
 		}
 		else
 		{
-			a[k] = h[j];
+			a[k] = R[j];
 			j++;
 		}
 	}
+
+	delete [] L;
+	delete [] R;
 }
 
-void merge_sort(int *a, int low, int high)
+void merge_sort(int *a, int start, int end)
 {
 	int mid;
-	if(low < high)
+	if(start < end)
 	{
-		mid = floor((float)((high - low) / 2));
-		merge_sort(a, low, mid);
-		merge_sort(a, mid + 1, high);
-		merge(a, low, mid, high);
+		mid =(start + end) / 2;
+		merge_sort(a, start, mid);
+		merge_sort(a, mid + 1, end);
+		merge(a, start, mid, end);
 	}
 }
