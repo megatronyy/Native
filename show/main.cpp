@@ -34,7 +34,8 @@ int main(void)
 
 	//插入排序
 	//选择排序
-	testsort();
+	//testsort();
+	testMerge();
 
 	//快速排序
 	//testQuickSort();
