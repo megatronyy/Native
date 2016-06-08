@@ -17,4 +17,4 @@ extern bool insert_list(PNODE, int, int);
 extern bool delete_list(PNODE, int, int *);
 extern void sort_list(PNODE);
 extern void testList();
-extern void reverse_list(PNODE *);//反转单链表
+extern void reverse_list(NODE **);//反转单链表

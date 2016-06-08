@@ -16,10 +16,11 @@ class LeetCode
 {
 public:
 	void TestCommonPrefixMothed();
-	void TestUglyNumber();
-	void TestReverseList();
+	void TestNumber();
 	//求第N个丑数
-	int nthUglyNumber(int n);
+	int nthUglyNumber(int number);
+	//判断是否为素数
+	bool IsPrime(int n);
 private:
 	//找出每个数组的最在公用前缀
 	string LongestCommonPrefix(vector<string> &strs);

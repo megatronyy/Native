@@ -44,13 +44,17 @@ string LeetCode::LongestCommonPrefix(vector<string> &strs)
 	return prefix;
 }
 
-void LeetCode::TestUglyNumber()
+void LeetCode::TestNumber()
 {
 	int num = 60;
 	int uglyNum = nthUglyNumber(num);
 	cout << "第" << num <<"个丑数是：" << uglyNum << endl;
 	string result = IsUgly(uglyNum) == false ? "否" : "是";
-	cout << uglyNum << "是否是丑数：" << result << endl;
+	cout << uglyNum << "是否为丑数：" << result << endl;
+
+	int prime = 2147483647;
+	result = IsPrime(prime) == false ? "否" : "是";
+	cout << prime << "是否为素数：" << result << endl;
 
 }
 bool LeetCode::IsUgly(int number)
@@ -96,4 +100,15 @@ int LeetCode::nthUglyNumber(int n)
 	}
 
 	return (int)minUgly;
+}
+bool LeetCode::IsPrime(int number)
+{
+	int k = sqrt(number);
+	for(int m = 2; m <= k; m++)
+	{
+		if(number % m == 0) break;
+		if(m > k)
+			return true;
+		return false;
+	}
 }

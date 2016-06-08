@@ -15,9 +15,9 @@ void testList()
 
 	//sort_list(pHead);
 
-	PNODE p = reverse_list(pHead);
+	reverse_list(&pHead);
 
-	traverse_list(p);
+	traverse_list(pHead);
 }
 
 //´´½¨Á´±í
@@ -173,7 +173,7 @@ void sort_list(PNODE pHead)
 	}
 }
 
-void reverse_list(PNODE *pplist)
+void reverse_list(NODE **pplist)
 {
 	if(pplist==NULL||*pplist==NULL)
 		return;
