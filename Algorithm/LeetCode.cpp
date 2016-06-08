@@ -1,7 +1,6 @@
-#include "LongestPrefix.h"
+#include "LeetCode.h"
 
-
-void LongestPrefix::TestMothed()
+void LeetCode::TestCommonPrefixMothed()
 {
 	//string strs[] = {"289","25324","22434","232","234"};
 	//vector<string> vstr(strs, strs+5);
@@ -16,8 +15,7 @@ void LongestPrefix::TestMothed()
 	string prefix = LongestCommonPrefix(vstr);
 	cout << "最大公共前缀是：" << prefix << endl;
 }
-
-string LongestPrefix::LongestCommonPrefix(vector<string> &strs)
+string LeetCode::LongestCommonPrefix(vector<string> &strs)
 {
 	if(strs.size() == 0)
 		return "";
@@ -44,4 +42,24 @@ string LongestPrefix::LongestCommonPrefix(vector<string> &strs)
 	}
 
 	return prefix;
+}
+
+void LeetCode::TestUglyNumber()
+{
+	int num = 60;
+	cout << num << "是否是丑数：" << IsUgly(num) << endl;
+}
+
+bool LeetCode::IsUgly(int number)
+{
+	if(number % 2 == 0)
+		number /= 2;
+
+	if(number % 3 == 0)
+		number /= 3;
+
+	if(number % 5 == 0)
+		number /= 5;
+
+	return number == 1 ? true : false; 
 }

@@ -1,5 +1,5 @@
 #pragma once
-#include "LongestPrefix.h"
+#include "LeetCode.h"
 #pragma comment(lib, "Common.lib")
 
 class LeetCodeDemo

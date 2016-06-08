@@ -80,7 +80,7 @@
     <ClInclude Include="describe.h" />
     <ClInclude Include="digui.h" />
     <ClInclude Include="list.h" />
-    <ClInclude Include="LongestPrefix.h" />
+    <ClInclude Include="LeetCode.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="QuickSort.h" />
@@ -93,7 +93,7 @@
     <ClCompile Include="array.cc" />
     <ClCompile Include="digui.cc" />
     <ClCompile Include="list.cc" />
-    <ClCompile Include="LongestPrefix.cpp" />
+    <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="merge.cc" />
     <ClCompile Include="queue.cc" />
     <ClCompile Include="QuickSort.cc" />

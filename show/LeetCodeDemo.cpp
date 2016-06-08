@@ -3,6 +3,7 @@
 
 void LeetCodeDemo::TestMothed()
 {
-	LongestPrefix prefix;
-	prefix.TestMothed();
+	LeetCode leet;
+	leet.TestCommonPrefixMothed();
+	leet.TestUglyNumber();
 }

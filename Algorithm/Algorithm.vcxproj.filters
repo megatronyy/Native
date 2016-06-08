@@ -69,7 +69,7 @@
     <ClInclude Include="tree.h">
       <Filter>数据结构\头文件</Filter>
     </ClInclude>
-    <ClInclude Include="LongestPrefix.h">
+    <ClInclude Include="LeetCode.h">
       <Filter>LeetCode\头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -104,7 +104,7 @@
     <ClCompile Include="tree.cc">
       <Filter>数据结构\源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LongestPrefix.cpp">
+    <ClCompile Include="LeetCode.cpp">
       <Filter>LeetCode\源文件</Filter>
     </ClCompile>
   </ItemGroup>
