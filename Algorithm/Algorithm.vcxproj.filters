@@ -13,30 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="LeetCode">
+      <UniqueIdentifier>{36ac4b34-6ecf-4f12-afed-26ac852eda9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LeetCode\头文件">
+      <UniqueIdentifier>{a4b6ac8f-e18a-4b1f-b213-0c72775e68c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LeetCode\源文件">
+      <UniqueIdentifier>{6253eb68-133d-483b-86c3-a134c1a536b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据结构">
+      <UniqueIdentifier>{b802199d-5720-47bd-8621-ef7d1925a81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据结构\头文件">
+      <UniqueIdentifier>{ea532a35-4a8a-407c-a50b-0519db039cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据结构\源文件">
+      <UniqueIdentifier>{0d28e945-7270-4db3-80bf-7202ce86d63b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="array.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="digui.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="list.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="queue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="recursion.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="stack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="tree.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="describe.h">
@@ -51,27 +54,30 @@
     <ClInclude Include="merge.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LongestPrefix.h">
+      <Filter>LeetCode\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="array.h">
+      <Filter>数据结构\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>数据结构\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>数据结构\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>数据结构\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.h">
+      <Filter>数据结构\头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="array.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="digui.cc">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="list.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="queue.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="recursion.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="stack.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="tree.cc">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="sort.cc">
@@ -82,6 +88,24 @@
     </ClCompile>
     <ClCompile Include="merge.cc">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestPrefix.cpp">
+      <Filter>LeetCode\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array.cc">
+      <Filter>数据结构\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="list.cc">
+      <Filter>数据结构\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cc">
+      <Filter>数据结构\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cc">
+      <Filter>数据结构\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tree.cc">
+      <Filter>数据结构\源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
