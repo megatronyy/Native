@@ -95,8 +95,6 @@
     <ClInclude Include="AlgorithmDemo.h" />
     <ClInclude Include="DataStructDemo.h" />
     <ClInclude Include="LeetCodeDemo.h" />
-    <ClInclude Include="testdll.h" />
-    <ClInclude Include="testlib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
