@@ -47,19 +47,26 @@ string LeetCode::LongestCommonPrefix(vector<string> &strs)
 void LeetCode::TestUglyNumber()
 {
 	int num = 60;
-	cout << num << "是否是丑数：" << IsUgly(num) << endl;
+	string result = IsUgly(num) == false ? "否" : "是";
+	cout << num << "是否是丑数：" << result << endl;
 }
 
 bool LeetCode::IsUgly(int number)
 {
-	if(number % 2 == 0)
+	while (number % 2 == 0)
+	{
 		number /= 2;
-
-	if(number % 3 == 0)
+	}
+		
+	while (number % 3 == 0)
+	{
 		number /= 3;
+	}
 
-	if(number % 5 == 0)
+	while (number % 5 == 0)
+	{
 		number /= 5;
+	}
 
 	return number == 1 ? true : false; 
 }
