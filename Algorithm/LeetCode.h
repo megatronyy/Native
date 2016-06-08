@@ -8,7 +8,7 @@ using namespace std;
 
 typedef struct ListNode{
 	int val;
-	int *next;
+	ListNode *next;
 	ListNode(int x) : val(x), next(NULL){}
 } LISTNODE, *PLISTNODE;
 
@@ -17,6 +17,7 @@ class LeetCode
 public:
 	void TestCommonPrefixMothed();
 	void TestUglyNumber();
+	void TestReverseList();
 	//求第N个丑数
 	int nthUglyNumber(int n);
 private:

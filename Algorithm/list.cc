@@ -13,9 +13,11 @@ void testList()
 	/*int val;
 	delete_list(pHead, 3, &val);*/
 
-	sort_list(pHead);
+	//sort_list(pHead);
 
-	traverse_list(pHead);
+	PNODE p = reverse_list(pHead);
+
+	traverse_list(p);
 }
 
 //创建链表
@@ -168,5 +170,23 @@ void sort_list(PNODE pHead)
 				q->data = t;
 			}
 		}
+	}
+}
+
+void reverse_list(PNODE *pplist)
+{
+	if(pplist==NULL||*pplist==NULL)
+		return;
+
+	PNODE current=NULL,next=NULL;
+	//原来的表头 
+	current=(*pplist)->pNext;
+	(*pplist)->pNext=NULL;
+
+	while(current!=NULL){
+		next=current->pNext;   //保存下一个位置
+		current->pNext=*pplist;  //改变指向 
+		*pplist=current;    //保存当前位置 
+		current=next; 
 	}
 }

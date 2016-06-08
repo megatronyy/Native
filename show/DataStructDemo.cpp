@@ -7,11 +7,11 @@ void DataStructDemo::TestMethod()
 	//testArr();
 
 	//线性表测试--链表
-	//testList();
+	testList();
 
 	//线性表测试--链式栈
 	//testStack();
 
 	//线性表测试--循环队列
-	testQueue();
+	//testQueue();
 }
