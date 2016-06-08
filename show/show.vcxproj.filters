@@ -18,12 +18,30 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCodeDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgorithmDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="testlib.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="testdll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructDemo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LeetCodeDemo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgorithmDemo.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

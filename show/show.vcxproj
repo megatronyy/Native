@@ -81,6 +81,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AlgorithmDemo.cpp" />
+    <ClCompile Include="DataStructDemo.cpp" />
+    <ClCompile Include="LeetCodeDemo.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +92,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AlgorithmDemo.h" />
+    <ClInclude Include="DataStructDemo.h" />
+    <ClInclude Include="LeetCodeDemo.h" />
     <ClInclude Include="testdll.h" />
     <ClInclude Include="testlib.h" />
   </ItemGroup>

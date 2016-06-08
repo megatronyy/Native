@@ -54,9 +54,6 @@
     <ClInclude Include="merge.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="LongestPrefix.h">
-      <Filter>LeetCode\头文件</Filter>
-    </ClInclude>
     <ClInclude Include="array.h">
       <Filter>数据结构\头文件</Filter>
     </ClInclude>
@@ -71,6 +68,9 @@
     </ClInclude>
     <ClInclude Include="tree.h">
       <Filter>数据结构\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LongestPrefix.h">
+      <Filter>LeetCode\头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -89,9 +89,6 @@
     <ClCompile Include="merge.cc">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LongestPrefix.cpp">
-      <Filter>LeetCode\源文件</Filter>
-    </ClCompile>
     <ClCompile Include="array.cc">
       <Filter>数据结构\源文件</Filter>
     </ClCompile>
@@ -106,6 +103,9 @@
     </ClCompile>
     <ClCompile Include="tree.cc">
       <Filter>数据结构\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestPrefix.cpp">
+      <Filter>LeetCode\源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
