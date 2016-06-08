@@ -47,10 +47,12 @@ string LeetCode::LongestCommonPrefix(vector<string> &strs)
 void LeetCode::TestUglyNumber()
 {
 	int num = 60;
-	string result = IsUgly(num) == false ? "否" : "是";
-	cout << num << "是否是丑数：" << result << endl;
-}
+	int uglyNum = nthUglyNumber(num);
+	cout << "第" << num <<"个丑数是：" << uglyNum << endl;
+	string result = IsUgly(uglyNum) == false ? "否" : "是";
+	cout << uglyNum << "是否是丑数：" << result << endl;
 
+}
 bool LeetCode::IsUgly(int number)
 {
 	while (number % 2 == 0)
@@ -69,4 +71,29 @@ bool LeetCode::IsUgly(int number)
 	}
 
 	return number == 1 ? true : false; 
+}
+int LeetCode::nthUglyNumber(int n)
+{
+	vector<long> twos, threes, fives;
+	twos.push_back(1L);
+	threes.push_back(1L);
+	fives.push_back(1L);
+
+	long minUgly = 0;
+	int a = 0, b = 0, c = 0;
+	for(int i = 1; i<= n; i++)
+	{
+		minUgly = min(twos[a], threes[b]);
+		minUgly = min(minUgly, fives[c]);
+
+		if(minUgly == twos[a]){ a++; }
+		if(minUgly == threes[b]){ b++; }
+		if(minUgly == fives[c]){ c++; }
+
+		twos.push_back(minUgly * 2L);
+		threes.push_back(minUgly * 3L);
+		fives.push_back(minUgly * 5L);
+	}
+
+	return (int)minUgly;
 }
