@@ -15,7 +15,7 @@ void testList()
 
 	//sort_list(pHead);
 
-	reverse_list(&pHead);
+	pHead = reverse_list(pHead);
 
 	traverse_list(pHead);
 }
@@ -173,20 +173,23 @@ void sort_list(PNODE pHead)
 	}
 }
 
-void reverse_list(NODE **pplist)
+PNODE reverse_list(PNODE L)
 {
-	if(pplist==NULL||*pplist==NULL)
-		return;
+	PNODE current, p;
 
-	PNODE current=NULL,next=NULL;
-	//原来的表头 
-	current=(*pplist)->pNext;
-	(*pplist)->pNext=NULL;
-
-	while(current!=NULL){
-		next=current->pNext;   //保存下一个位置
-		current->pNext=*pplist;  //改变指向 
-		*pplist=current;    //保存当前位置 
-		current=next; 
+	if (L == NULL)
+	{
+		return NULL;
 	}
+
+	current = L->pNext;
+	while (current->pNext != NULL)
+	{
+		p = current->pNext;
+		current->pNext = p->pNext;
+		p->pNext = L->pNext;
+		L->pNext = p;
+	}
+
+	return L;
 }
