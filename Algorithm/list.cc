@@ -177,7 +177,7 @@ PNODE reverse_list(PNODE L)
 {
 	PNODE current, p;
 
-	if (L == NULL)
+	if (L == NULL || L->pNext == NULL)
 	{
 		return NULL;
 	}
