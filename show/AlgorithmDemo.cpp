@@ -17,5 +17,5 @@ void AlgorithmDemo::TestMethod()
 	//testMerge();
 
 	//©ЛкыеепР
-	//testQuickSort();
+	testQuickSort();
 }

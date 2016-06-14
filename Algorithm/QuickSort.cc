@@ -14,36 +14,36 @@ void testQuickSort()
 	printf("\n");
 }
 
-void quicksort(int *arr, int right, int left)
+void quicksort(int *arr, int left, int right)
 {
 	int pos;
-	if(right < left)
+	if(left < right)
 	{
-		pos = findpos(arr, right, left);
-		quicksort(arr, right, pos - 1);
-		quicksort(arr, pos + 1, left);
+		pos = findpos(arr, left, right);
+		quicksort(arr, left, pos - 1);
+		quicksort(arr, pos + 1, right);
 	}
 }
 
-int findpos(int *arr, int right, int left)
+int findpos(int *arr, int left, int right)
 {
-	int val = arr[right];
-	while (right < left)
+	int val = arr[left];
+	while (left < right)
 	{
-		while (right < left && arr[left] > val)
+		while (left < right && arr[right] > val)
 		{
-			--left;
-		}
-		arr[right] = arr[left];
-
-		while (right < left && arr[right] < val)
-		{
-			++right;
+			--right;
 		}
 		arr[left] = arr[right];
+
+		while (left < right && arr[left] < val)
+		{
+			++left;
+		}
+		arr[right] = arr[left];
 	}
 
-	arr[right] = val;
+	arr[left] = val;
 
-	return right;
+	return left;
 }
