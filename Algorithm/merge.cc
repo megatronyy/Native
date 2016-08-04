@@ -3,15 +3,15 @@
 void testMerge()
 {
 	int i;
-	//int arr[16] = {3, 4, 2, 6, 1, 5, 7, 9, 10, 8, 13, 11, 18, 31, 19};
-	const int len = 50000;
-	int arr[len];
+	int arr[15] = {3, 4, 2, 6, 1, 5, 7, 9, 10, 8, 13, 11, 18, 31, 19};
+	const int len = 15;
+	/*int arr[len];
 	srand((unsigned int)time(0));
 	
 	for(i = 0; i < len; ++i)
 	{
 		arr[i] = rand();
-	}
+	}*/
 
 	merge_sort(arr, 0, len -1);
 	for(i = 0; i < len; ++i)
