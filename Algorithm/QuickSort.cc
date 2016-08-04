@@ -19,7 +19,7 @@ void quicksort(int *arr, int left, int right)
 	int pos;
 	if(left < right)
 	{
-		pos = findpos(arr, left, right);
+		pos = position(arr, left, right);
 		quicksort(arr, left, pos - 1);
 		quicksort(arr, pos + 1, right);
 	}
@@ -46,4 +46,30 @@ int findpos(int *arr, int left, int right)
 	arr[left] = val;
 
 	return left;
+}
+
+int position(int *arr, int left, int right)
+{
+	int j;
+	int val = arr[right];
+	int i = left - 1;
+	for(j = left; j<right;j++)
+	{
+		if(arr[j] <= val)
+		{
+			i++;
+			exchange(arr, i, j);
+		}
+	}
+	exchange(arr, i+1, j);
+	//如果数据元素相等，返回(left+right)/2
+	//if(i == right)
+	return i + 1;	
+}
+
+void exchange(int *arr, int i, int j)
+{
+	int temp = arr[i];
+	arr[i] = arr[j];
+	arr[j] = temp;
 }
