@@ -6,7 +6,7 @@
 #include "merge.h"
 #include "recursion.h"
 #include "digui.h"
-#pragma comment(lib, "Common.lib")
+#pragma comment(lib, "Algorithm.lib")
 
 class AlgorithmDemo
 {

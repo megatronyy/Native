@@ -3,7 +3,7 @@
 #include "list.h"
 //#include "stack.h"
 //#include "queue.h"
-#pragma comment(lib, "Common.lib")
+#pragma comment(lib, "Algorithm.lib")
 
 class DataStructDemo
 {
