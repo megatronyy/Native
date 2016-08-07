@@ -87,8 +87,8 @@ int LeetCode::nthUglyNumber(int n)
 	int a = 0, b = 0, c = 0;
 	for(int i = 1; i<= n; i++)
 	{
-		minUgly = min(twos[a], threes[b]);
-		minUgly = min(minUgly, fives[c]);
+		//minUgly = min(twos[a], threes[b]);
+		//minUgly = min(minUgly, fives[c]);
 
 		if(minUgly == twos[a]){ a++; }
 		if(minUgly == threes[b]){ b++; }
@@ -111,4 +111,5 @@ bool LeetCode::IsPrime(int number)
 			return true;
 		return false;
 	}
+	return false;
 }
