@@ -79,6 +79,7 @@
     <ClInclude Include="array.h" />
     <ClInclude Include="describe.h" />
     <ClInclude Include="digui.h" />
+    <ClInclude Include="knap.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="LeetCode.h" />
     <ClInclude Include="merge.h" />
@@ -92,6 +93,7 @@
   <ItemGroup>
     <ClCompile Include="array.cc" />
     <ClCompile Include="digui.cc" />
+    <ClCompile Include="knap.cc" />
     <ClCompile Include="list.cc" />
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="merge.cc" />

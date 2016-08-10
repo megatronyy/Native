@@ -72,6 +72,9 @@
     <ClInclude Include="LeetCode.h">
       <Filter>LeetCode\头文件</Filter>
     </ClInclude>
+    <ClInclude Include="knap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="digui.cc">
@@ -106,6 +109,9 @@
     </ClCompile>
     <ClCompile Include="LeetCode.cpp">
       <Filter>LeetCode\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="knap.cc">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
