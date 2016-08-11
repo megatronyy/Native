@@ -14,8 +14,11 @@ void AlgorithmDemo::TestMethod()
 	//插入排序
 	//选择排序
 	//testsort();
-	testMerge();
+	//testMerge();
 
 	//快速排序
 	//testQuickSort();
+
+	//最长公共子序列
+	testDpMain();
 }

@@ -1,4 +1,5 @@
 ﻿/*
+	动态规划求解01背包问题：
 	表达式中各个符号的具体含义。
 　　w[i] :  第i个物体的重量；
   　p[i] : 第i个物体的价值；
@@ -16,7 +17,7 @@ void knapMethod()
 {
 	int m, n; int i, j;
 	printf("input the max capacity and the number of the goods:\n");
-	scanf("%d,%d", &m, &n);
+	scanf_s("%d,%d", &m, &n);
 	printf("Input each one(weight and value):\n");
 	knap(m, n);
 	printf("\n");
@@ -45,7 +46,7 @@ void knap(int m, int n)
 				c[i][j] = c[i - 1][j - w[i]] + p[i];
 			}
 			else {
-				c[i][j] = c[i - ][j];
+				c[i][j] = c[i - 1][j];
 			}
 		}
 	}

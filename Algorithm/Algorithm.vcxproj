@@ -80,6 +80,7 @@
     <ClInclude Include="describe.h" />
     <ClInclude Include="digui.h" />
     <ClInclude Include="knap.h" />
+    <ClInclude Include="LCS.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="LeetCode.h" />
     <ClInclude Include="merge.h" />
