@@ -95,6 +95,7 @@
     <ClCompile Include="array.cc" />
     <ClCompile Include="digui.cc" />
     <ClCompile Include="knap.cc" />
+    <ClCompile Include="LCS.cc" />
     <ClCompile Include="list.cc" />
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="merge.cc" />
