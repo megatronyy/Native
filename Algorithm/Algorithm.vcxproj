@@ -89,6 +89,7 @@
     <ClInclude Include="recursion.h" />
     <ClInclude Include="sort.h" />
     <ClInclude Include="stack.h" />
+    <ClInclude Include="SteelCutDP.h" />
     <ClInclude Include="tree.h" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +105,7 @@
     <ClCompile Include="recursion.cc" />
     <ClCompile Include="sort.cc" />
     <ClCompile Include="stack.cc" />
+    <ClCompile Include="SteelCutDP.cc" />
     <ClCompile Include="tree.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
