@@ -22,7 +22,7 @@ string LeetCode::LongestCommonPrefix(vector<string> &strs)
 
 	string prefix = strs[0];
 
-	for(int i=1; i<strs.size(); ++i)
+	for(size_t i=1; i<strs.size(); ++i)
 	{
 		if(prefix.length() == 0 || strs[i].length() == 0)
 			return "";
@@ -103,7 +103,7 @@ int LeetCode::nthUglyNumber(int n)
 }
 bool LeetCode::IsPrime(int number)
 {
-	int k = sqrt(number);
+	int k = (int)sqrt(number);
 	for(int m = 2; m <= k; m++)
 	{
 		if(number % m == 0) break;

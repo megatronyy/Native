@@ -11,4 +11,4 @@
 
 //вт╣воРио
 extern int bottom_up_cut_aux(int);
-extern void testMain();
+extern void testSteelMain();

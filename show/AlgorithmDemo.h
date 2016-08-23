@@ -7,6 +7,7 @@
 #include "recursion.h"
 #include "digui.h"
 #include "LCS.h"
+#include "SteelCutDP.h"
 #pragma comment(lib, "Algorithm.lib")
 
 class AlgorithmDemo

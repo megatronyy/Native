@@ -10,9 +10,9 @@ int bottom_up_cut_aux(int n)
 	for (j = 1; j <= n; j++)
 	{
 		q = -1;
-		for (i = 1; i <= n; i++)
+		for (i = 1; i <= j; i++)
 		{
-			a = p[i] + r[i - j];
+			a = p[i] + r[j - i];
 			q = a > q ? a : q;
 		}
 		r[j] = q;
@@ -20,7 +20,8 @@ int bottom_up_cut_aux(int n)
 	return r[n];
 }
 
-void testMain()
+void testSteelMain()
 {
-
+	int v = bottom_up_cut_aux(4);
+	printf_s("%d\n", v);
 }

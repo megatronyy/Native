@@ -20,5 +20,8 @@ void AlgorithmDemo::TestMethod()
 	//testQuickSort();
 
 	//最长公共子序列
-	testDpMain();
+	//testDpMain();
+
+	//钢条切割价值最大化
+	testSteelMain();
 }

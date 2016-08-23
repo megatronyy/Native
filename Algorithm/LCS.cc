@@ -6,7 +6,7 @@ char flag[501][501]; //标记数组，用于标识下标的走向，构造出公共子序列
 
 void LCSDP()
 {
-	int i, j;
+    size_t i, j;
 	for (i = 1; i <= strlen(a); i++)
 	{
 		for (j = 1; j <= strlen(b); j++)
@@ -62,7 +62,7 @@ void getLCSDP()
 
 void testDpMain()
 {
-	int i;
+	//int i;
 	strcpy_s(a, "ABCBDAB");
 	strcpy_s(b, "BDCABA");
 	//lena = strlen(a);
