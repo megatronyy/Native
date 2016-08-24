@@ -26,7 +26,7 @@ int bottom_up_cut_aux(int n)
 }
 void print_cut_rod_solution(int n)
 {
-	int v = bottom_up_cut_aux(7);
+	int v = bottom_up_cut_aux(n);
 	printf_s("最大价值：%d\n", v);
 
 	while (n > 0)
@@ -37,5 +37,5 @@ void print_cut_rod_solution(int n)
 }
 void testSteelMain()
 {
-	print_cut_rod_solution(4);
+	print_cut_rod_solution(7);
 }
