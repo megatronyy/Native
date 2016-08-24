@@ -10,5 +10,6 @@
 */
 
 //вт╣воРио
-extern int bottom_up_cut_aux(int);
+int bottom_up_cut_aux(int);
+void print_cut_rod_solution(int);
 extern void testSteelMain();

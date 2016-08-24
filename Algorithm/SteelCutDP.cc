@@ -13,15 +13,29 @@ int bottom_up_cut_aux(int n)
 		for (i = 1; i <= j; i++)
 		{
 			a = p[i] + r[j - i];
-			q = a > q ? a : q;
+			if (q < a)
+			{
+				q = a;
+				s[j] = i;
+			}
+			//q = a > q ? a : q;
 		}
 		r[j] = q;
 	}
 	return r[n];
 }
+void print_cut_rod_solution(int n)
+{
+	int v = bottom_up_cut_aux(7);
+	printf_s("最大价值：%d\n", v);
 
+	while (n > 0)
+	{
+		printf_s("切割方案：%d\n", s[n]);
+		n = n - s[n];
+	}
+}
 void testSteelMain()
 {
-	int v = bottom_up_cut_aux(4);
-	printf_s("%d\n", v);
+	print_cut_rod_solution(4);
 }
