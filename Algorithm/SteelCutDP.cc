@@ -1,7 +1,7 @@
 #include "SteelCutDP.h"
 
 int p[11] = {0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
-int r[11], s[11];
+int r[11] = { -1 }, s[11] = {-1};
 
 int bottom_up_cut_aux(int n)
 {
@@ -35,6 +35,33 @@ void print_cut_rod_solution(int n)
 		n = n - s[n];
 	}
 }
+
+int top_down_cut(int n)
+{
+	return top_down_cut_aux(n);
+}
+
+int top_down_cut_aux(int n)
+{
+	int i, q, a;
+	if (r[n] >= 0)
+		return r[n];
+	if (n == 0)
+	{
+		q = 0;
+	}
+	else
+	{
+		for (i = 1; i <= n; i++)
+		{
+			a = p[i] + top_down_cut_aux(n - i);
+			q = q > a ? q : a;
+		}
+	}
+	r[n] = q;
+	return q;
+}
+
 void testSteelMain()
 {
 	print_cut_rod_solution(7);
