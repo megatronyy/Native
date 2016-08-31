@@ -54,6 +54,7 @@ int top_down_cut_aux(int n)
 	{
 		for (i = 1; i <= n; i++)
 		{
+			q = 0;
 			a = p[i] + top_down_cut_aux(n - i);
 			q = q > a ? q : a;
 		}

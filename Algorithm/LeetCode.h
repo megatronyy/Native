@@ -21,10 +21,13 @@ public:
 	int nthUglyNumber(int number);
 	//判断是否为素数
 	bool IsPrime(int n);
+	int KMP(char *A, char *B, int len, int len2);
+
 private:
 	//找出每个数组的最在公用前缀
 	string LongestCommonPrefix(vector<string> &strs);
 	//判断数字是否为丑数，丑数只能被2，3，5，整除
 	bool IsUgly(int number);
+	void get_next(char *T, int *next, int len);
 };
 

@@ -113,3 +113,47 @@ bool LeetCode::IsPrime(int number)
 	}
 	return false;
 }
+
+void LeetCode::get_next(char *T, int *next, int len)
+{
+	int j = 0, k = -1;
+	next[0] = -1;
+	while (j <= len)
+	{
+		if (k == -1 || T[j] == T[k])
+		{
+			j++;
+			k++;
+			next[j] = k;
+		}
+		else
+		{
+			k = next[k];
+		}
+	}
+}
+
+int LeetCode::KMP(char *A, char *B, int len, int len2)
+{
+	int *next = new int[len + 5];
+	get_next(B, next, len);
+	int i = 0, j = 0, ans = 0;
+	while (i < len2)
+	{
+		if (j == -1 || A[i] == B[j])
+		{
+			i++, j++;
+		}
+		else
+		{
+			j = next[j];
+		}
+
+		if (j == len)
+		{
+			ans++;
+			j = 0;
+		}
+	}
+	return ans;
+}
